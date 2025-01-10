@@ -134,11 +134,11 @@ function App() {
                       </div>
                       {product.imagesUrl.map((item, index) =>
                         item ? (
-                          <div className="">
-                            <img src={item} key={index} onClick={changeImageUrl} className="object-fit-cover" style={{ height: "140px", width: "140px" }} />
+                          <div className="" key={index}>
+                            <img src={item} onClick={changeImageUrl} className="object-fit-cover" style={{ height: "140px", width: "140px" }} />
                           </div>
                         ) : (
-                          <div className=""></div>
+                          <div className="" key={index}></div>
                         )
                       )}
                     </div>
